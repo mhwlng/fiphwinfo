@@ -1,6 +1,8 @@
 # fiphwinfo
 Information Display for Logitech Flight Instrument Panel for HWInfo
 
+![Logitech Flight Instrument Panel with Elgato Stream Deck](https://i.imgur.com/1ATZSOj.jpg)
+
 Use the right rotary encoder to scroll vertically.
 
 Use the left rotary encoder to show another card.
