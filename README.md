@@ -1,14 +1,12 @@
 # fiphwinfo
 Information Display for Logitech Flight Instrument Panel for HWInfo
 
-Use the right rotary encoder to scroll vertically on all tabs.
+Use the right rotary encoder to scroll vertically.
 
-Use the left rotary encoder to show another card on various tabs or zoom into the galaxy map.
+Use the left rotary encoder to show another card.
 Also, the S5 button shows the next card and the S6 button shows the previous card.
 
-Press the S1 button to display the menu.
-
-Any data from [HWInfo](https://www.hwinfo.com) can be displayed. **This also works when Elite Dangerous is not running.**
+Any data from [HWInfo](https://www.hwinfo.com) can be displayed.
 
 When HWInfo64 is detected, all the available sensors will be written at startup to the data\hwinfo.json file.
 
