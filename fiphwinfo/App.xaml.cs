@@ -193,6 +193,8 @@ namespace fiphwinfo
 
                 HWInfoTask = Task.Run(async () =>
                 {
+                    var result = await MQTT.Connect();
+                    
                     Log.Info("HWInfo task started");
 
                     while (true)
@@ -212,7 +214,9 @@ namespace fiphwinfo
                 }, hwInfoToken);
 
             });
+
         }
+      
 
         protected override void OnExit(ExitEventArgs e)
         {

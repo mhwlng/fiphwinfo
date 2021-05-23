@@ -21,6 +21,22 @@ A configuration tool, to link sensor ids to variables in the HWINFO.inc file, ca
 
 ![hwinfo tool](https://i.imgur.com/Px6jvw4.png)
 
+The HWINFO sensor data can optionally be sent to an MQTT server, by creating a file called mqtt.config (this file doesn't exist by default)
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <mqtt>
+    <add key="mqttURI" value="192.168.2.34" />
+    <add key="mqttUser" value="mqttusername" />
+    <add key="mqttPassword" value="secretpassword" />
+    <add key="mqttPort" value="1883" />
+    <add key="mqttSecure" value="False" />
+  </mqtt>
+</configuration>
+```
+
+![MQTT](https://i.imgur.com/X8IkHPg.png)
 
 A sound is played when menu options are selected.
 This sound can be changed or disabled by editing the 'clickSound' key in in appsettings.config
