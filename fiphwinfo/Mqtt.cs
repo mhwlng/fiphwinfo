@@ -11,9 +11,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using MQTTnet;
 using MQTTnet.Client;
-using MQTTnet.Client.Connecting;
-using MQTTnet.Client.Options;
-using MQTTnet.Client.Publishing;
+using MQTTnet.Protocol;
 
 namespace fiphwinfo
 {
@@ -39,7 +37,8 @@ namespace fiphwinfo
             var message = new MqttApplicationMessageBuilder()
                     .WithTopic(channel)
                     .WithPayload(value)
-                    .WithAtMostOnceQoS()
+                    //.WithAtMostOnceQoS()
+                    .WithQualityOfServiceLevel(MqttQualityOfServiceLevel.AtMostOnce)
                     //.WithRetainFlag()
                     .Build();
 
